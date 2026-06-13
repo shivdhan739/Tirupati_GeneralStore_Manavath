@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tirupati Kirana & General Store — Manwath</title>
+<meta name="description" content="Tirupati Kirana & General Store Manwath. Classmate & Sundaram Notebooks, Stationery, Kirana, General Store. Best prices in Manwath Parbhani.">
+<meta name="keywords" content="Tirupati Kirana Manwath, notebook sale Manwath, Classmate notebook, Sundaram notebook, stationery Manwath, kirana store Manwath Parbhani">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Martel:wght@700;900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<style>
+:root{
+  --bl:#1A3A8F;--bm:#2558C8;--bl2:#0D2760;--gold:#F5A623;--goldd:#c77f00;
+  --red:#D62828;--grn:#2ecc71;--cream:#F0F4FF;--white:#fff;
+  --dk:#0D1B3E;--tm:#2a3f6e;--sh:0 6px 28px rgba(13,27,62,.13);
+  --shl:0 14px 44px rgba(13,27,62,.2);--r:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Poppins',sans-serif;background:var(--cream);color:var(--dk);min-height:100vh;}
+::-webkit-scrollbar{width:6px;}
+::-webkit-scrollbar-thumb{background:var(--bm);border-radius:3px;}
+
+/* NAVBAR */
+.navbar{background:linear-gradient(110deg,var(--bl2) 0%,var(--bl) 100%);padding:0 16px;display:flex;align-items:center;justify-content:space-between;height:66px;position:sticky;top:0;z-index:9000;box-shadow:0 4px 24px rgba(0,0,0,.35);}
+.logo-wrap{display:flex;align-items:center;gap:10px;cursor:pointer;}
+.logo-circle{width:42px;height:42px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;animation:hb 3s ease-in-out infinite;flex-shrink:0;}
+@keyframes hb{0%,100%{transform:scale(1);}50%{transform:scale(1.07);}}
+.logo-wrap h1{font-family:'Baloo 2',cursive;color:#fff;font-size:15px;line-height:1.2;font-weight:800;}
+.logo-wrap p{color:var(--gold);font-size:10px;font-weight:600;letter-spacing:.6px;}
+.nav-links{display:flex;gap:4px;align-items:center;flex-wrap:wrap;}
+.nb{background:transparent;border:1.5px solid rgba(255,255,255,.28);color:#fff;padding:6px 11px;border-radius:20px;cursor:pointer;font-family:'Poppins',sans-serif;font-size:11.5px;font-weight:500;transition:all .18s;white-space:nowrap;}
+.nb:hover,.nb.active{background:var(--gold);border-color:var(--gold);color:var(--dk);font-weight:700;}
+.nb.prim{background:var(--gold);border-color:var(--gold);color:var(--dk);font-weight:700;}
+
+/* PAGES */
+.page{display:none;}.page.active{display:block;}
+
+/* HERO */
+.hero{background:linear-gradient(150deg,var(--bl2) 0%,#1a3a8f 45%,#2558c8 100%);min-height:90vh;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;padding:50px 20px;}
+.hp{position:absolute;inset:0;opacity:.05;background-image:radial-gradient(circle,#fff 1px,transparent 1px);background-size:28px 28px;}
+.hg{position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(245,166,35,.15) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);}
+.hc{text-align:center;z-index:2;max-width:720px;}
+.hbadge{display:inline-flex;align-items:center;gap:7px;background:rgba(245,166,35,.18);border:1px solid rgba(245,166,35,.5);color:var(--gold);padding:7px 20px;border-radius:24px;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;margin-bottom:22px;animation:fD .8s ease;}
+.hero h1{font-family:'Martel',serif;color:#fff;font-size:clamp(26px,5.5vw,54px);line-height:1.13;margin-bottom:10px;animation:fU .8s ease .1s both;}
+.hero h1 em{color:var(--gold);font-style:normal;}
+.hero-owner{color:rgba(255,255,255,.75);font-size:14px;margin-bottom:6px;animation:fU .8s ease .2s both;}
+.hero-sub{color:var(--gold);font-size:13px;font-weight:700;letter-spacing:.3px;margin-bottom:38px;animation:fU .8s ease .3s both;}
+.hbtns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;animation:fU .8s ease .4s both;}
+.btn-gold{background:var(--gold);color:var(--dk);border:none;padding:13px 32px;border-radius:28px;font-family:'Baloo 2',cursive;font-size:14px;font-weight:800;cursor:pointer;transition:all .2s;box-shadow:0 6px 22px rgba(245,166,35,.4);}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(245,166,35,.55);}
+.btn-ow{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.45);padding:13px 32px;border-radius:28px;font-family:'Baloo 2',cursive;font-size:14px;font-weight:700;cursor:pointer;transition:all .2s;}
+.btn-ow:hover{border-color:#fff;background:rgba(255,255,255,.1);}
+.hstats{display:flex;gap:36px;justify-content:center;margin-top:50px;animation:fU .8s ease .5s both;flex-wrap:wrap;}
+.hs{text-align:center;}.hsn{font-family:'Martel',serif;color:var(--gold);font-size:30px;font-weight:900;}.hsl{color:rgba(255,255,255,.65);font-size:11.5px;margin-top:2px;}
+@keyframes fU{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:translateY(0);}}
+@keyframes fD{from{opacity:0;transform:translateY(-14px);}to{opacity:1;transform:translateY(0);}}
+
+/* SALE BANNER */
+.sale-banner{background:linear-gradient(135deg,var(--red),#b71c1c);color:#fff;text-align:center;padding:14px 20px;font-family:'Baloo 2',cursive;font-size:16px;font-weight:800;letter-spacing:.5px;animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.85;}}
+.sale-banner span{background:var(--gold);color:var(--dk);padding:3px 12px;border-radius:12px;margin:0 6px;font-size:14px;}
+
+/* SECTIONS */
+.sec{padding:62px 20px;max-width:1120px;margin:0 auto;}
+.sechd{text-align:center;margin-bottom:42px;}
+.sechd h2{font-family:'Martel',serif;font-size:clamp(22px,4vw,36px);color:var(--dk);margin-bottom:8px;}
+.sechd p{color:#888;font-size:14px;}
+.div{width:54px;height:4px;background:linear-gradient(90deg,var(--bl),var(--gold));border-radius:2px;margin:10px auto;}
+.fg2{display:grid;grid-template-columns:repeat(auto-fill,minmax(228px,1fr));gap:18px;}
+.fc{background:#fff;border-radius:var(--r);padding:24px 20px;box-shadow:var(--sh);display:flex;gap:15px;align-items:flex-start;border:1px solid rgba(0,0,0,.05);transition:transform .2s,box-shadow .2s;}
+.fc:hover{transform:translateY(-4px);box-shadow:var(--shl);}
+.fc-ico{font-size:32px;flex-shrink:0;}
+.fc h3{color:var(--dk);font-size:14.5px;margin-bottom:5px;font-weight:700;}
+.fc p{color:#777;font-size:12px;line-height:1.6;}
+
+/* PRODUCT CARDS */
+.sgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:18px;}
+.sc2{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);transition:all .25s;border:1px solid rgba(0,0,0,.05);}
+.sc2:hover{transform:translateY(-6px);box-shadow:var(--shl);}
+.sci{height:120px;display:flex;align-items:center;justify-content:center;font-size:48px;position:relative;}
+.sci.c1{background:linear-gradient(135deg,#1A3A8F,#2558C8);}
+.sci.c2{background:linear-gradient(135deg,#D62828,#ff5252);}
+.sci.c3{background:linear-gradient(135deg,#2ecc71,#27ae60);}
+.sci.c4{background:linear-gradient(135deg,#F5A623,#f39c12);}
+.sci.c5{background:linear-gradient(135deg,#8e44ad,#9b59b6);}
+.sci.c6{background:linear-gradient(135deg,#16a085,#1abc9c);}
+.sci.c7{background:linear-gradient(135deg,#e67e22,#d35400);}
+.sci.c8{background:linear-gradient(135deg,#2c3e50,#34495e);}
+.scb-badge{position:absolute;top:8px;right:8px;background:var(--gold);color:var(--dk);font-size:9px;font-weight:800;padding:3px 8px;border-radius:10px;}
+.scbd{padding:13px 14px 15px;}
+.sccat{color:var(--bm);font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.6px;margin-bottom:3px;}
+.scnm{font-weight:700;color:var(--dk);font-size:13.5px;margin-bottom:3px;}
+.scdesc{color:#888;font-size:11px;line-height:1.55;margin-bottom:10px;}
+.scft{display:flex;align-items:center;justify-content:space-between;}
+.scpr{font-family:'Martel',serif;color:var(--dk);font-size:15px;font-weight:700;}
+.scpr small{color:#aaa;font-size:9.5px;font-family:'Poppins',sans-serif;}
+.abtn{background:linear-gradient(135deg,var(--bl),var(--bl2));color:#fff;border:none;padding:7px 13px;border-radius:8px;font-size:11px;font-weight:700;cursor:pointer;transition:all .18s;}
+.abtn:hover{transform:scale(1.05);}
+
+/* TABS */
+.ftabs{display:flex;gap:7px;flex-wrap:wrap;justify-content:center;margin-bottom:30px;}
+.ftab{background:#fff;border:1.5px solid #dde;padding:7px 16px;border-radius:20px;cursor:pointer;font-size:12px;font-weight:500;transition:all .18s;color:#888;}
+.ftab.active,.ftab:hover{background:var(--bl);border-color:var(--bl);color:#fff;}
+
+/* CART */
+.cart-bar{position:fixed;bottom:20px;right:20px;z-index:8000;}
+.cart-fab{background:linear-gradient(135deg,var(--bl),var(--bl2));color:#fff;border:none;border-radius:50px;padding:14px 22px;font-family:'Baloo 2',cursive;font-size:14px;font-weight:800;cursor:pointer;box-shadow:0 8px 30px rgba(26,58,143,.4);display:flex;align-items:center;gap:8px;transition:all .2s;}
+.cart-fab:hover{transform:translateY(-3px);}
+.cart-cnt{background:#fff;color:var(--bl);border-radius:50%;width:22px;height:22px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:900;}
+
+/* FORMS */
+.fpg{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:40px 16px;background:linear-gradient(145deg,#e8edf8 0%,var(--cream) 100%);}
+.fcard{background:#fff;border-radius:26px;padding:36px;width:100%;max-width:480px;box-shadow:var(--shl);animation:fU .5s ease;}
+.fcard.wide{max-width:630px;}
+.fhd{text-align:center;margin-bottom:24px;}
+.fhd-ico{width:60px;height:60px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;margin:0 auto 12px;}
+.fhd-ico.gr{background:#e8f0fb;}
+.fhd-ico.gl{background:#fff8e1;}
+.fhd h2{font-family:'Martel',serif;color:var(--dk);font-size:22px;margin-bottom:4px;}
+.fhd p{color:#aaa;font-size:13px;}
+.fgrp{margin-bottom:14px;}
+.flbl{display:block;font-size:12px;font-weight:700;color:var(--tm);margin-bottom:5px;}
+.fi{width:100%;padding:10px 13px;border:1.5px solid #e2e2e2;border-radius:10px;font-family:'Poppins',sans-serif;font-size:13px;color:var(--dk);transition:border .18s;outline:none;background:#fff;}
+.fi:focus{border-color:var(--bl);box-shadow:0 0 0 3px rgba(26,58,143,.09);}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:13px;}
+textarea.fi{resize:vertical;min-height:80px;}
+select.fi{appearance:none;}
+.fsub{width:100%;padding:12px;background:linear-gradient(135deg,var(--bl),var(--bl2));color:#fff;border:none;border-radius:11px;font-family:'Poppins',sans-serif;font-size:14px;font-weight:700;cursor:pointer;transition:all .2s;margin-top:5px;}
+.fsub:hover:not(:disabled){transform:translateY(-1px);box-shadow:0 8px 22px rgba(13,27,62,.28);}
+.fsub:disabled{opacity:.65;cursor:not-allowed;}
+.fsub.gbtn{background:linear-gradient(135deg,var(--gold),var(--goldd));color:var(--dk);}
+.flink{text-align:center;margin-top:14px;font-size:12.5px;color:#aaa;}
+.flink a{color:var(--bl);font-weight:700;cursor:pointer;}
+.fdiv{display:flex;align-items:center;gap:11px;margin:14px 0;color:#ccc;font-size:12px;}
+.fdiv::before,.fdiv::after{content:'';flex:1;height:1px;background:#ececec;}
+.alert{padding:11px 14px;border-radius:8px;font-size:12.5px;margin-bottom:14px;}
+.aok{background:#e8f0fb;color:var(--dk);border:1px solid #b3c9f0;}
+.aerr{background:#fff0f0;color:#b00020;border:1px solid #ffc8c8;}
+.hidden{display:none!important;}
+
+/* EMAIL STATUS */
+.esb{background:#f4f8ff;border:1px solid #b3c9f0;border-radius:10px;padding:11px 14px;margin-bottom:13px;display:flex;align-items:center;gap:9px;font-size:12px;}
+.esb.sending{border-color:#ffe082;background:#fff8e1;}
+.esb.sent{border-color:#90b3e0;background:#e8f0fb;}
+.esb.failed{border-color:#ef9a9a;background:#ffebee;}
+.spin{width:18px;height:18px;border:2.5px solid #e0e0e0;border-top-color:var(--bl);border-radius:50%;animation:sp .7s linear infinite;flex-shrink:0;}
+@keyframes sp{to{transform:rotate(360deg);}}
+
+/* CART MODAL */
+.mov{display:none;position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:10000;align-items:center;justify-content:center;padding:16px;}
+.mov.show{display:flex;}
+.mbox{background:#fff;border-radius:22px;padding:26px;max-width:520px;width:100%;animation:fU .3s ease;position:relative;max-height:92vh;overflow-y:auto;}
+.mcls{position:absolute;top:12px;right:14px;background:#f2f2f2;border:none;border-radius:50%;width:29px;height:29px;cursor:pointer;font-size:15px;display:flex;align-items:center;justify-content:center;}
+.cart-item{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid #f2f2f2;}
+.qty-ctrl{display:flex;align-items:center;gap:8px;}
+.qty-btn{width:26px;height:26px;border:1.5px solid #dde;background:#fff;border-radius:6px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;font-weight:700;}
+
+/* PAY OPTIONS */
+.pay-opts{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0;}
+.pay-opt{background:#f8f9fa;border:2px solid #e0e0e0;border-radius:12px;padding:12px 10px;text-align:center;cursor:pointer;transition:all .2s;font-size:12px;font-weight:600;}
+.pay-opt:hover,.pay-opt.selected{border-color:var(--bl);background:#e8f0fb;color:var(--bl);}
+.upi-box{background:#f0f8ff;border:1.5px solid #b3c9f0;border-radius:10px;padding:14px;text-align:center;margin:10px 0;}
+.upi-id{font-family:monospace;font-size:16px;font-weight:800;color:var(--bl);letter-spacing:1px;}
+
+/* DASHBOARD */
+.dash{max-width:1200px;margin:0 auto;padding:26px 18px;}
+.dhdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:26px;gap:12px;flex-wrap:wrap;}
+.dwl h2{font-family:'Martel',serif;color:var(--dk);font-size:22px;}
+.dwl p{color:#aaa;font-size:12px;}
+.lbtn{background:#fff0f0;color:#b00;border:1.5px solid #ffc8c8;padding:7px 15px;border-radius:8px;font-size:12.5px;font-weight:700;cursor:pointer;}
+.lbtn:hover{background:#b00;color:#fff;border-color:#b00;}
+.srow{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:14px;margin-bottom:24px;}
+.scrd{background:#fff;border-radius:var(--r);padding:18px;box-shadow:var(--sh);border-left:4px solid var(--bl);display:flex;align-items:center;gap:12px;}
+.scrd.gb{border-left-color:var(--gold);}
+.scrd.eb{border-left-color:var(--red);}
+.scrd.bb{border-left-color:#1565c0;}
+.scrd.mb{border-left-color:var(--grn);}
+.scico{font-size:27px;min-width:36px;text-align:center;}
+.scv{font-family:'Martel',serif;font-size:22px;color:var(--dk);font-weight:900;line-height:1;}
+.scl{color:#bbb;font-size:11px;margin-top:2px;}
+.tcard{background:#fff;border-radius:var(--r);box-shadow:var(--sh);overflow:hidden;margin-bottom:20px;}
+.thd{background:linear-gradient(110deg,var(--bl2),var(--bl));color:#fff;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;}
+.thd h3{font-family:'Martel',serif;font-size:15.5px;}
+.thd span{font-size:11px;opacity:.7;}
+table{width:100%;border-collapse:collapse;font-size:13px;}
+th{background:#e8f0fb;color:var(--dk);font-weight:700;font-size:11px;text-transform:uppercase;letter-spacing:.5px;padding:10px 14px;text-align:left;}
+td{padding:10px 14px;border-bottom:1px solid #f2f2f2;color:var(--dk);}
+tr:last-child td{border-bottom:none;}
+tr:hover td{background:#f4f8ff;}
+.bdg{display:inline-block;padding:3px 9px;border-radius:10px;font-size:10px;font-weight:700;}
+.bg{background:#e8f0fb;color:var(--dk);}
+.by{background:#fff8e1;color:var(--goldd);}
+.bb2{background:#e3f2fd;color:#1565c0;}
+.br{background:#ffebee;color:#b00020;}
+.bgrn{background:#e8f5e9;color:#2e7d32;}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+
+/* CONTACT */
+.csec{background:linear-gradient(140deg,var(--bl2) 0%,#0D2760 100%);padding:60px 20px;}
+.cgrid{max-width:920px;margin:0 auto;display:grid;grid-template-columns:1fr 1.45fr;gap:42px;align-items:start;}
+.ci h2{font-family:'Martel',serif;color:#fff;font-size:27px;margin-bottom:10px;}
+.ci p{color:rgba(255,255,255,.72);font-size:13px;line-height:1.7;margin-bottom:22px;}
+.cd{display:flex;align-items:center;gap:11px;color:#fff;margin-bottom:13px;font-size:13px;}
+.cdico{width:35px;height:35px;background:rgba(255,255,255,.15);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;}
+.cfc{background:#fff;border-radius:18px;padding:28px;box-shadow:var(--shl);}
+.cfc h3{font-family:'Martel',serif;color:var(--dk);font-size:18px;margin-bottom:17px;}
+
+/* TOAST */
+.toast{position:fixed;top:76px;right:16px;background:#fff;border-radius:12px;padding:12px 16px;box-shadow:0 8px 36px rgba(0,0,0,.15);display:flex;align-items:flex-start;gap:10px;max-width:320px;z-index:99999;animation:slIn .35s ease;border-left:4px solid var(--bl);}
+.toast.gt{border-left-color:var(--gold);}
+.toast.et{border-left-color:#b00;}
+.toast.hide{animation:slOut .35s ease forwards;}
+@keyframes slIn{from{transform:translateX(130%);opacity:0;}to{transform:translateX(0);opacity:1;}}
+@keyframes slOut{from{transform:translateX(0);opacity:1;}to{transform:translateX(130%);opacity:0;}}
+.tico{font-size:20px;margin-top:1px;}
+.tttl{font-weight:700;color:var(--dk);font-size:13px;margin-bottom:2px;}
+.tmsg{font-size:11px;color:#888;}
+
+/* EMAIL MODAL */
+.eprev{background:#f4f8ff;border:1px solid #b3c9f0;border-radius:10px;padding:14px;font-family:monospace;font-size:11px;color:var(--dk);line-height:1.75;margin:10px 0;max-height:250px;overflow-y:auto;white-space:pre-wrap;word-break:break-word;}
+.elbl{background:#e8f0fb;border-radius:7px;padding:7px 11px;font-size:11.5px;font-weight:700;color:var(--dk);margin-bottom:4px;display:flex;align-items:center;gap:6px;}
+
+@media(max-width:700px){.cgrid{grid-template-columns:1fr;}.frow{grid-template-columns:1fr;}.g2{grid-template-columns:1fr;}}
+
+footer{background:var(--bl2);color:rgba(255,255,255,.65);text-align:center;padding:20px;font-size:12.5px;}
+footer strong{color:var(--gold);}
+footer p+p{margin-top:5px;font-size:11px;}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo-wrap" onclick="showPage('home')">
+    <div class="logo-circle">📚</div>
+    <div>
+      <h1>Tirupati Kirana</h1>
+      <p>General Store — Manwath</p>
+    </div>
+  </div>
+  <div class="nav-links">
+    <button class="nb active" onclick="showPage('home')">Home</button>
+    <button class="nb" onclick="showPage('products')">📚 Products</button>
+    <button class="nb" onclick="showPage('contact')">Contact</button>
+    <button class="nb" onclick="showPage('register')">Register</button>
+    <button class="nb" onclick="showPage('customer-login')">👤 Login</button>
+    <button class="nb prim" onclick="showPage('admin-login')">🔐 Admin</button>
+  </div>
+</nav>
+
+<!-- CART FAB -->
+<div class="cart-bar">
+  <button class="cart-fab" id="cartFab" onclick="openCart()" style="display:none;">
+    🛒 Cart <div class="cart-cnt" id="cartBadge">0</div>
+  </button>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast" style="display:none;">
+  <div class="tico" id="tIco">✅</div>
+  <div><div class="tttl" id="tTtl">Title</div><div class="tmsg" id="tMsg">Msg</div></div>
+</div>
+
+<!-- CART MODAL -->
+<div class="mov" id="cartModal">
+  <div class="mbox" style="max-width:560px;">
+    <button class="mcls" onclick="closeCart()">✕</button>
+    <h3 style="font-family:'Martel',serif;color:var(--dk);font-size:20px;margin-bottom:16px;">🛒 Your Cart</h3>
+    <div id="cartItems"></div>
+    <div id="cartTotal" class="hidden" style="background:#e8f0fb;border-radius:10px;padding:12px 16px;margin:14px 0;display:flex;justify-content:space-between;align-items:center;">
+      <span style="font-weight:700;font-size:15px;">Total Amount:</span>
+      <span style="font-family:'Martel',serif;font-size:20px;font-weight:900;color:var(--bl);" id="totalAmt">₹0</span>
+    </div>
+    <div id="cartBtns">
+      <button class="fsub" onclick="proceedToOrder()">📦 Proceed to Order</button>
+      <button class="fsub" style="background:#f5f5f5;color:#888;margin-top:8px;" onclick="closeCart()">Continue Shopping</button>
+    </div>
+    <div id="paySection" class="hidden">
+      <div class="frow">
+        <div class="fgrp"><label class="flbl">Your Name *</label><input class="fi" id="ordName" placeholder="Full name"></div>
+        <div class="fgrp"><label class="flbl">Mobile *</label><input class="fi" id="ordMob" placeholder="+91 XXXXX XXXXX"></div>
+      </div>
+      <div class="fgrp"><label class="flbl">Email (optional)</label><input class="fi" id="ordEmail" type="email" placeholder="For order confirmation"></div>
+      <div class="fgrp"><label class="flbl">Note / Address</label><textarea class="fi" id="ordNote" placeholder="Special instructions or delivery address..." style="min-height:60px;"></textarea></div>
+      <label class="flbl">Select Payment Method *</label>
+      <div class="pay-opts">
+        <div class="pay-opt" onclick="selectPay('cash',this)">💵<br>Cash on Pickup</div>
+        <div class="pay-opt" onclick="selectPay('phonepay',this)">📱<br>PhonePe</div>
+        <div class="pay-opt" onclick="selectPay('gpay',this)">🟢<br>Google Pay</div>
+        <div class="pay-opt" onclick="selectPay('upi',this)">💳<br>UPI Transfer</div>
+      </div>
+      <div id="upiDetails" class="upi-box hidden">
+        <div style="font-size:12px;color:#888;margin-bottom:6px;">📲 Scan or pay to UPI ID:</div>
+        <div class="upi-id">9604497075@upi</div>
+        <div style="font-size:11px;color:#aaa;margin-top:4px;">Send screenshot after payment</div>
+      </div>
+      <div id="ordESB" class="esb hidden"><div class="spin" id="ordSpn" style="display:none;"></div><span id="ordESBtxt"></span></div>
+      <div id="ordOk" class="hidden aok alert">✅ Order placed! Admin notified. We will contact you shortly!</div>
+      <button class="fsub" id="ordBtn" onclick="placeOrder()">📦 Place Order & Notify Admin</button>
+      <button class="fsub" style="background:#f5f5f5;color:#888;margin-top:8px;" onclick="backToCart()">← Back to Cart</button>
+    </div>
+  </div>
+</div>
+
+<!-- EMAIL MODAL -->
+<div class="mov" id="eModal">
+  <div class="mbox">
+    <button class="mcls" onclick="closeMod()">✕</button>
+    <div style="text-align:center;font-size:34px;margin-bottom:5px;">📧</div>
+    <h3 style="font-family:'Martel',serif;color:var(--dk);text-align:center;font-size:19px;margin-bottom:12px;">Email Notifications Preview</h3>
+    <div id="modalCont"></div>
+    <button onclick="closeMod()" class="fsub" style="margin-top:6px;">Close</button>
+  </div>
+</div>
+
+<!-- ════ HOME ════ -->
+<div id="page-home" class="page active">
+  <!-- SALE BANNER -->
+  <div class="sale-banner">
+    🎉 NOTEBOOK SALE! <span>Classmate</span> & <span>Sundaram</span> — चांगली गुणवत्ता, परवडणारी किंमत! थोक खरेदीवर <span>विशेष सवलत!</span>
+  </div>
+
+  <div class="hero">
+    <div class="hp"></div><div class="hg"></div>
+    <div class="hc">
+      <div class="hbadge">📚 Branded • Quality • Trust — Manwath</div>
+      <h1>Tirupati Kirana<br><em>& General Store</em></h1>
+      <p class="hero-owner">विद्यार्थ्यांसाठी आनंदाची बातमी! — Notebook Sale!</p>
+      <p class="hero-sub">📍 Manwath, Parbhani, Maharashtra · शाळा • कॉलेज • ट्युशन • ऑफिस</p>
+      <div class="hbtns">
+        <button class="btn-gold" onclick="showPage('products')">📚 Browse Products</button>
+        <button class="btn-ow" onclick="showPage('register')">📋 Register Free</button>
+      </div>
+      <div class="hstats">
+        <div class="hs"><div class="hsn">500+</div><div class="hsl">Products</div></div>
+        <div class="hs"><div class="hsn">5000+</div><div class="hsl">Happy Customers</div></div>
+        <div class="hs"><div class="hsn">20+</div><div class="hsl">Years Experience</div></div>
+        <div class="hs"><div class="hsn">100%</div><div class="hsl">Genuine Brands</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sechd"><h2>आमच्याकडून का खरेदी करावी?</h2><div class="div"></div><p>Manwath, Parbhani & Marathwada mein trusted store for 20+ years</p></div>
+    <div class="fg2">
+      <div class="fc"><div class="fc-ico">🏅</div><div><h3>Branded Quality Products</h3><p>Classmate, Sundaram, Apsara, Natraj, Camlin — all genuine branded products.</p></div></div>
+      <div class="fc"><div class="fc-ico">💰</div><div><h3>Best Market Price</h3><p>चांगली गुणवत्ता, परवडणारी किंमत! थोक खरेदीवर विशेष सवलत मिळेल.</p></div></div>
+      <div class="fc"><div class="fc-ico">📦</div><div><h3>थोक खरेदी सवलत</h3><p>Schools, colleges, tuition classes — bulk orders pe special discount available.</p></div></div>
+      <div class="fc"><div class="fc-ico">🚀</div><div><h3>आजच घ्या — उद्या उशीर होईल!</h3><p>Sale for limited period only. दरोरोजच्या अभ्यासासाठी सर्वोत्तम निवड!</p></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ════ PRODUCTS ════ -->
+<div id="page-products" class="page">
+  <div class="sec" style="max-width:1200px;">
+    <div class="sechd"><h2>📚 Complete Product Range</h2><div class="div"></div><p>Notebooks, Stationery, Kirana, General Items — सर्व काही एकाच ठिकाणी!</p></div>
+    <div class="ftabs">
+      <button class="ftab active" onclick="flt('all',this)">All Products</button>
+      <button class="ftab" onclick="flt('classmate',this)">📓 Classmate</button>
+      <button class="ftab" onclick="flt('sundaram',this)">📗 Sundaram</button>
+      <button class="ftab" onclick="flt('notebook',this)">📔 Other Notebooks</button>
+      <button class="ftab" onclick="flt('pen',this)">🖊️ Pens & Pencils</button>
+      <button class="ftab" onclick="flt('stationery',this)">✂️ Stationery</button>
+      <button class="ftab" onclick="flt('kirana',this)">🛒 Kirana Items</button>
+      <button class="ftab" onclick="flt('pooja',this)">🪔 Pooja Items</button>
+      <button class="ftab" onclick="flt('general',this)">🏠 General Store</button>
+    </div>
+    <div class="sgrid" id="sgrid"></div>
+  </div>
+</div>
+
+<!-- ════ REGISTER ════ -->
+<div id="page-register" class="page">
+  <div class="fpg">
+    <div class="fcard wide">
+      <div class="fhd">
+        <div class="fhd-ico gr">📋</div>
+        <h2>Customer Registration</h2>
+        <p>Register free · Get order tracking & special offers</p>
+      </div>
+      <div id="regESB" class="hidden esb"></div>
+      <div class="alert aok hidden" id="regOk">✅ Registration successful! Confirmation sent. Admin notified.</div>
+      <div class="frow">
+        <div class="fgrp"><label class="flbl">First Name *</label><input class="fi" id="rFN" placeholder="First name"></div>
+        <div class="fgrp"><label class="flbl">Last Name *</label><input class="fi" id="rLN" placeholder="Last name"></div>
+      </div>
+      <div class="fgrp"><label class="flbl">Email *</label><input class="fi" id="rEM" type="email" placeholder="your@email.com"></div>
+      <div class="fgrp"><label class="flbl">Mobile *</label><input class="fi" id="rMO" placeholder="+91 XXXXX XXXXX"></div>
+      <div class="frow">
+        <div class="fgrp"><label class="flbl">City / Village *</label><input class="fi" id="rCT" placeholder="e.g. Manwath"></div>
+        <div class="fgrp"><label class="flbl">District</label><input class="fi" id="rDT" placeholder="e.g. Parbhani"></div>
+      </div>
+      <div class="frow">
+        <div class="fgrp"><label class="flbl">School / College</label><input class="fi" id="rLA" placeholder="e.g. Manwath High School"></div>
+        <div class="fgrp"><label class="flbl">Favourite Product</label><input class="fi" id="rFV" placeholder="e.g. Classmate 172pg"></div>
+      </div>
+      <div class="frow">
+        <div class="fgrp"><label class="flbl">Password *</label><input class="fi" id="rP1" type="password" placeholder="Min 5 chars"></div>
+        <div class="fgrp"><label class="flbl">Confirm Password *</label><input class="fi" id="rP2" type="password" placeholder="Repeat password"></div>
+      </div>
+      <button class="fsub" id="regBtn" onclick="doRegister()">📚 Create Account & Send Confirmation</button>
+      <div class="flink">Already registered? <a onclick="showPage('customer-login')">Login here →</a></div>
+    </div>
+  </div>
+</div>
+
+<!-- ════ CUSTOMER LOGIN ════ -->
+<div id="page-customer-login" class="page">
+  <div class="fpg">
+    <div class="fcard">
+      <div class="fhd">
+        <div class="fhd-ico gr">👤</div>
+        <h2>Customer Login</h2>
+        <p>Login to view orders & account history</p>
+      </div>
+      <div class="alert aerr hidden" id="cErr">❌ Invalid email or password.</div>
+      <div id="loginESB" class="hidden esb"></div>
+      <div class="fgrp"><label class="flbl">Email</label><input class="fi" id="cEM" type="email" placeholder="your@email.com" value="demo@customer.com"></div>
+      <div class="fgrp"><label class="flbl">Password</label><input class="fi" id="cPW" type="password" placeholder="Password" value="demo123"></div>
+      <button class="fsub" id="loginBtn" onclick="doLogin()">Login to My Account</button>
+      <div class="fdiv">demo account</div>
+      <div style="text-align:center;color:#ccc;font-size:10.5px;">demo@customer.com / demo123</div>
+      <div class="flink" style="margin-top:10px;">New customer? <a onclick="showPage('register')">Register free →</a></div>
+    </div>
+  </div>
+</div>
+
+<!-- ════ ADMIN LOGIN ════ -->
+<div id="page-admin-login" class="page">
+  <div class="fpg">
+    <div class="fcard">
+      <div class="fhd">
+        <div class="fhd-ico gl">🔐</div>
+        <h2>Admin Login</h2>
+        <p>Tirupati Kirana — Owner Panel</p>
+      </div>
+      <div class="alert aerr hidden" id="aErr">❌ Wrong credentials.</div>
+      <div class="fgrp"><label class="flbl">Username</label><input class="fi" id="aUN" value="admin" placeholder="admin"></div>
+      <div class="fgrp"><label class="flbl">Password</label><input class="fi" id="aPW" type="password" value="admin123" placeholder="password"></div>
+      <button class="fsub gbtn" onclick="doAdminLogin()">🔐 Access Admin Panel</button>
+      <div style="text-align:center;margin-top:8px;color:#ccc;font-size:10.5px;">Demo: admin / admin123</div>
+    </div>
+  </div>
+</div>
+
+<!-- ════ CUSTOMER DASHBOARD ════ -->
+<div id="page-customer-dash" class="page">
+  <div class="dash">
+    <div class="dhdr">
+      <div class="dwl"><h2>Welcome, <span id="cName">Customer</span> ji! 🙏</h2><p id="cEmail" style="color:#aaa;font-size:12px;"></p></div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;">
+        <button class="btn-gold" style="padding:9px 20px;font-size:13px;" onclick="showPage('products')">📚 Shop More</button>
+        <button class="lbtn" onclick="logout('c')">🚪 Logout</button>
+      </div>
+    </div>
+    <div class="srow">
+      <div class="scrd"><div class="scico">🛒</div><div><div class="scv" id="cTotalOrders">0</div><div class="scl">Total Orders</div></div></div>
+      <div class="scrd gb"><div class="scico">💰</div><div><div class="scv" id="cTotalSpent">₹0</div><div class="scl">Total Spent</div></div></div>
+      <div class="scrd eb"><div class="scico">⏳</div><div><div class="scv" id="cPending">0</div><div class="scl">Pending</div></div></div>
+      <div class="scrd bb"><div class="scico">✅</div><div><div class="scv" id="cDelivered">0</div><div class="scl">Delivered</div></div></div>
+    </div>
+    <div class="tcard">
+      <div class="thd"><h3>📋 My Order History</h3><span>All orders</span></div>
+      <div style="overflow-x:auto;"><table><thead><tr><th>#</th><th>Date</th><th>Items</th><th>Amount</th><th>Payment</th><th>Status</th></tr></thead><tbody id="cPurchTbl"></tbody></table></div>
+    </div>
+  </div>
+</div>
+
+<!-- ════ ADMIN DASHBOARD ════ -->
+<div id="page-admin-dash" class="page">
+  <div class="dash">
+    <div class="dhdr">
+      <div class="dwl"><h2>📚 Admin Dashboard</h2><p>Tirupati Kirana & General Store — Manwath · <strong style="color:var(--bl);">shivdhanshirgole085@gmail.com</strong></p></div>
+      <button class="lbtn" onclick="logout('a')">🚪 Logout</button>
+    </div>
+    <div class="srow">
+      <div class="scrd"><div class="scico">📦</div><div><div class="scv" id="aTotalOrders">0</div><div class="scl">Total Orders</div></div></div>
+      <div class="scrd gb"><div class="scico">💰</div><div><div class="scv" id="aRevenue">₹0</div><div class="scl">Revenue</div></div></div>
+      <div class="scrd eb"><div class="scico">👥</div><div><div class="scv" id="aCustCount">0</div><div class="scl">Customers</div></div></div>
+      <div class="scrd bb"><div class="scico">⏳</div><div><div class="scv" id="aPendingCount">0</div><div class="scl">Pending</div></div></div>
+      <div class="scrd mb"><div class="scico">✅</div><div><div class="scv" id="aDelivered">0</div><div class="scl">Delivered</div></div></div>
+    </div>
+    <div class="tcard">
+      <div class="thd"><h3>📅 Today's Orders</h3><span id="todayDate"></span></div>
+      <div style="overflow-x:auto;"><table><thead><tr><th>#</th><th>Time</th><th>Customer</th><th>Items</th><th>Amount</th><th>Payment</th><th>Status</th><th>Action</th></tr></thead><tbody id="aTodayTbl"></tbody></table></div>
+    </div>
+    <div class="tcard">
+      <div class="thd"><h3>📋 All Orders</h3><span>Complete history</span></div>
+      <div style="overflow-x:auto;"><table><thead><tr><th>#</th><th>Date</th><th>Customer</th><th>Mobile</th><th>Items</th><th>Amount</th><th>Payment</th><th>Status</th></tr></thead><tbody id="aSalesTbl"></tbody></table></div>
+    </div>
+    <div class="g2">
+      <div class="tcard"><div class="thd"><h3>🏆 Top Selling Products</h3></div><div style="padding:14px;" id="aTopItems"></div></div>
+      <div class="tcard"><div class="thd"><h3>👥 Recent Customers</h3></div><div style="padding:14px;" id="aCusts"></div></div>
+    </div>
+    <div class="tcard">
+      <div class="thd"><h3>👥 All Registered Customers</h3><span><button onclick="resetCustomers()" style="background:rgba(255,255,255,.15);border:none;color:#fff;padding:4px 10px;border-radius:8px;font-size:11px;cursor:pointer;">🔄 Reset</button></span></div>
+      <div style="overflow-x:auto;"><table><thead><tr><th>#</th><th>Name</th><th>Email</th><th>Mobile</th><th>City</th><th>District</th><th>School/College</th><th>Fav Product</th><th>Date</th></tr></thead><tbody id="aAllCusts"></tbody></table></div>
+    </div>
+  </div>
+</div>
+
+<!-- ════ CONTACT ════ -->
+<div id="page-contact" class="page">
+  <div class="csec">
+    <div class="cgrid">
+      <div class="ci">
+        <h2>📞 संपर्क करा</h2>
+        <p>Notebook, stationery, kirana — कोणत्याही वस्तूसाठी आम्हाला संपर्क करा. थोक खरेदीसाठी विशेष सवलत!</p>
+        <div class="cd"><div class="cdico">📍</div><div>Manwath, Tq. Manwath, Dist. Parbhani, Maharashtra</div></div>
+        <div class="cd"><div class="cdico">📞</div><div>+91 96044 97075</div></div>
+        <div class="cd"><div class="cdico">📧</div><div>shivdhanshirgole085@gmail.com</div></div>
+        <div class="cd"><div class="cdico">🕐</div><div>Mon–Sat: 8 AM – 9 PM · Sun: 9 AM – 1 PM</div></div>
+        <div class="cd"><div class="cdico">🏫</div><div>शाळा • कॉलेज • ट्युशन • ऑफिस bulk orders welcome!</div></div>
+      </div>
+      <div class="cfc">
+        <h3>संदेश पाठवा</h3>
+        <div class="alert aok hidden" id="cOk">✅ Message sent! We'll contact you soon.</div>
+        <div id="contactESB" class="hidden esb"></div>
+        <div class="frow">
+          <div class="fgrp"><label class="flbl">Name *</label><input class="fi" id="cNm" placeholder="Your name"></div>
+          <div class="fgrp"><label class="flbl">Mobile *</label><input class="fi" id="cMb" placeholder="+91 XXXXX"></div>
+        </div>
+        <div class="fgrp"><label class="flbl">Email</label><input class="fi" id="cEm" type="email" placeholder="email@example.com"></div>
+        <div class="fgrp">
+          <label class="flbl">Product Interested In</label>
+          <select class="fi" id="cSd">
+            <option>-- Select Category --</option>
+            <optgroup label="📓 Classmate Notebooks">
+              <option>Classmate 120 Pages</option>
+              <option>Classmate 172 Pages</option>
+              <option>Classmate 240 Pages</option>
+              <option>Classmate Pulse Series</option>
+            </optgroup>
+            <optgroup label="📗 Sundaram Notebooks">
+              <option>Sundaram 172 Pages</option>
+              <option>Sundaram 240 Pages Winner</option>
+            </optgroup>
+            <optgroup label="🖊️ Pens & Pencils">
+              <option>Classmate Pens</option>
+              <option>Apsara Pencils</option>
+              <option>Natraj Pencils</option>
+              <option>Cello Pens</option>
+            </optgroup>
+            <optgroup label="✂️ Stationery">
+              <option>Geometry Box</option>
+              <option>Scale / Ruler</option>
+              <option>Eraser & Sharpener</option>
+              <option>Drawing Books</option>
+            </optgroup>
+            <optgroup label="🛒 Kirana & General">
+              <option>Kirana Items</option>
+              <option>Pooja Items</option>
+              <option>General Store Items</option>
+            </optgroup>
+            <option>Bulk / Wholesale Order</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="fgrp"><label class="flbl">Message</label><textarea class="fi" id="cMs" placeholder="Your query or bulk order details..."></textarea></div>
+        <button class="fsub" onclick="doContact()">📤 Send Message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>📚 <strong>Tirupati Kirana & General Store</strong> · Manwath, Dist. Parbhani, Maharashtra</p>
+  <p>📞 +91 96044 97075 &nbsp;|&nbsp; 📧 shivdhanshirgole085@gmail.com &nbsp;|&nbsp; © 2025 All Rights Reserved</p>
+</footer>
+
+<script>
+/* ═══ EmailJS CONFIG ═══ */
+const EJS = {
+  SERVICE_ID: "service_utiba9a",
+  TEMPLATE_ID: "template_6tesf8r",
+  CUSTOMER_TEMPLATE_ID: "template_miw9mff",
+  PUBLIC_KEY: "ly0Z7_DwsSGmyS0l_"
+};
+const CONFIGURED = EJS.PUBLIC_KEY && !EJS.PUBLIC_KEY.startsWith('YOUR');
+const SHOP_EMAIL = 'shivdhanshirgole085@gmail.com';
+const SHOP_NAME  = 'Tirupati Kirana & General Store';
+const SHOP_PHONE = '+91 96044 97075';
+const SHOP_ADDR  = 'Manwath, Tq. Manwath, Dist. Parbhani, Maharashtra';
+const UPI_ID     = '9604497075@upi';
+try { if(CONFIGURED) emailjs.init({ publicKey: EJS.PUBLIC_KEY }); } catch(e){}
+
+/* ═══ PRODUCT DATA ═══ */
+const MENU = [
+  // CLASSMATE
+  {id:1, n:'Classmate Notebook 120 Pages',    c:'classmate', i:'📓',col:'c1',p:35, u:'piece', d:'Classmate 120 pages. Single line. Excellent quality paper. ISI certified. उत्कृष्ट कागद गुणवत्ता.', b:'Bestseller'},
+  {id:2, n:'Classmate Notebook 172 Pages',    c:'classmate', i:'📓',col:'c1',p:50, u:'piece', d:'Classmate 172 pages. Single & four line options. Smooth writing experience.', b:'Popular'},
+  {id:3, n:'Classmate Notebook 240 Pages',    c:'classmate', i:'📓',col:'c1',p:70, u:'piece', d:'Classmate 240 pages. Premium thick cover. Best for long-term use.', b:'Hot'},
+  {id:4, n:'Classmate Pulse 172 Pages',       c:'classmate', i:'📓',col:'c1',p:55, u:'piece', d:'Classmate Pulse series. Designer cover. 172 pages. Trendy & durable.'},
+  {id:5, n:'Classmate 5-Subject Notebook',    c:'classmate', i:'📓',col:'c1',p:120,u:'piece', d:'5 subjects in one notebook. 300+ pages. Perfect for college students.', b:'New'},
+  {id:6, n:'Classmate Drawing Book A4',       c:'classmate', i:'🎨',col:'c1',p:60, u:'piece', d:'Classmate drawing book. A4 size. Thick white pages. For school art projects.'},
+  {id:7, n:'Classmate Bulk Pack (6 notebooks)',c:'classmate',i:'📦',col:'c1',p:280,u:'pack',  d:'Pack of 6 Classmate 172-page notebooks. Best value for money! थोक सवलत.', b:'Value Pack'},
+
+  // SUNDARAM
+  {id:8, n:'Sundaram Notebook 172 Pages',     c:'sundaram',  i:'📗',col:'c2',p:48, u:'piece', d:'Sundaram 172 pages. चांगली गुणवत्ता किफायतशीर दरात. Books for Success!', b:'Popular'},
+  {id:9, n:'Sundaram Winner 240 Pages',       c:'sundaram',  i:'📗',col:'c2',p:68, u:'piece', d:'Sundaram Winner series. 240 pages. Premium quality. Best for board exam students.', b:'Bestseller'},
+  {id:10,n:'Sundaram 120 Pages',              c:'sundaram',  i:'📗',col:'c2',p:32, u:'piece', d:'Sundaram 120 pages. Affordable & good quality. For primary school students.'},
+  {id:11,n:'Sundaram Bulk Pack (6 notebooks)',c:'sundaram',  i:'📦',col:'c2',p:260,u:'pack',  d:'Pack of 6 Sundaram 172-page notebooks. Best bulk deal! विशेष सवलत.', b:'Value Pack'},
+
+  // OTHER NOTEBOOKS
+  {id:12,n:'Long Notebook 200 Pages',         c:'notebook',  i:'📔',col:'c3',p:40, u:'piece', d:'Long size notebook. 200 pages. Good quality. For tuition & college notes.'},
+  {id:13,n:'Small Notebook 100 Pages',        c:'notebook',  i:'📔',col:'c3',p:25, u:'piece', d:'Small pocket notebook. 100 pages. Easy to carry. For quick notes.'},
+  {id:14,n:'Register (200 Pages)',            c:'notebook',  i:'📔',col:'c3',p:55, u:'piece', d:'200 pages register. Ruled. For account keeping & records.'},
+  {id:15,n:'Graph Book',                      c:'notebook',  i:'📊',col:'c3',p:30, u:'piece', d:'Graph book with coordinate paper. For maths & science projects.'},
+  {id:16,n:'Practical Notebook',             c:'notebook',  i:'📋',col:'c3',p:45, u:'piece', d:'Practical record notebook. Half plain half ruled. For science lab records.'},
+
+  // PENS & PENCILS
+  {id:17,n:'Cello Pinpoint Pen (Pack of 10)', c:'pen',       i:'🖊️',col:'c4',p:60, u:'pack',  d:'Cello Pinpoint ballpen. Smooth writing. Pack of 10. Blue & black.', b:'Bestseller'},
+  {id:18,n:'Classmate Octane Pen',            c:'pen',       i:'🖊️',col:'c4',p:15, u:'piece', d:'Classmate Octane gel pen. Smooth flow. 0.7mm. Blue & black ink.', b:'Popular'},
+  {id:19,n:'Apsara Platinum Pencil (Pack 10)',c:'pen',       i:'✏️',col:'c4',p:35, u:'pack',  d:'Apsara Platinum pencils. HB grade. Break-resistant. Pack of 10.', b:'Bestseller'},
+  {id:20,n:'Natraj Pencil (Pack of 10)',      c:'pen',       i:'✏️',col:'c4',p:30, u:'pack',  d:'Natraj HB pencils. Dark & smooth writing. Pack of 10. School favourite.'},
+  {id:21,n:'Marker Pen (Camlin)',             c:'pen',       i:'🖊️',col:'c4',p:25, u:'piece', d:'Camlin permanent marker. Black/blue/red. For labels & projects.'},
+  {id:22,n:'Sketch Pen Set (12 Colors)',      c:'pen',       i:'🎨',col:'c4',p:55, u:'set',   d:'12 color sketch pen set. Bright & vibrant. For school projects & art.', b:'Popular'},
+  {id:23,n:'Highlighter Pen (4 Colors)',      c:'pen',       i:'🖊️',col:'c4',p:45, u:'set',   d:'4-color highlighter set. For important notes & study material.'},
+
+  // STATIONERY
+  {id:24,n:'Geometry Box (Classmate)',        c:'stationery',i:'📐',col:'c5',p:95, u:'piece', d:'Classmate geometry box. Compass, scale, protractor, divider. Complete set.', b:'Bestseller'},
+  {id:25,n:'Apsara Eraser',                  c:'stationery',i:'✂️',col:'c5',p:5,  u:'piece', d:'Apsara white eraser. Clean & smooth erasing. No smudges.'},
+  {id:26,n:'Pencil Sharpener',               c:'stationery',i:'✂️',col:'c5',p:10, u:'piece', d:'Dual hole pencil sharpener. For regular & jumbo pencils. Durable plastic.'},
+  {id:27,n:'Scale 30cm (Plastic)',           c:'stationery',i:'📏',col:'c5',p:8,  u:'piece', d:'30cm transparent plastic ruler. Centimeter & millimeter markings.'},
+  {id:28,n:'Drawing Instruments Set',        c:'stationery',i:'📐',col:'c5',p:120,u:'set',   d:'Complete drawing set. T-square, set squares, scale. For engineering students.'},
+  {id:29,n:'Stapler + Staple Pins',          c:'stationery',i:'📎',col:'c5',p:80, u:'set',   d:'Mini stapler with 1000 staple pins. For office & school use.'},
+  {id:30,n:'Fevistick Glue',                 c:'stationery',i:'🧴',col:'c5',p:20, u:'piece', d:'Fevistick solid glue. Easy application. No mess. For school projects.'},
+  {id:31,n:'Scissors (Stainless Steel)',     c:'stationery',i:'✂️',col:'c5',p:35, u:'piece', d:'Stainless steel scissors. Sharp cutting. Safe for students.'},
+  {id:32,n:'A4 Blank Paper (100 sheets)',    c:'stationery',i:'📄',col:'c5',p:60, u:'pack',  d:'A4 white paper. 75 GSM. 100 sheets. For printing & writing.'},
+
+  // KIRANA
+  {id:33,n:'Tata Salt 1kg',                  c:'kirana',    i:'🧂',col:'c6',p:20, u:'packet', d:'Tata iodized salt. 1kg. Pure & natural. India\'s most trusted salt brand.', b:'Popular'},
+  {id:34,n:'Aashirvaad Atta 5kg',            c:'kirana',    i:'🌾',col:'c6',p:210,u:'bag',    d:'Aashirvaad whole wheat atta. 5kg. Soft rotis every time.', b:'Bestseller'},
+  {id:35,n:'Tata Tea Premium 250g',          c:'kirana',    i:'☕',col:'c6',p:110,u:'pack',   d:'Tata Tea Premium. 250g. Strong flavour. Made from finest tea leaves.'},
+  {id:36,n:'Surf Excel 1kg',                 c:'kirana',    i:'🧺',col:'c6',p:115,u:'pack',   d:'Surf Excel Easy Wash. 1kg. Superior cleaning power. Removes tough stains.'},
+  {id:37,n:'Maggi Noodles (Pack of 4)',      c:'kirana',    i:'🍜',col:'c6',p:60, u:'pack',   d:'Nestle Maggi 2-min noodles. Pack of 4. Classic Masala flavour.', b:'Popular'},
+  {id:38,n:'Fortune Sunflower Oil 1L',       c:'kirana',    i:'🫙',col:'c6',p:130,u:'bottle', d:'Fortune sunflower oil. 1 litre. Healthy cooking oil. Light on stomach.'},
+  {id:39,n:'Parle-G Biscuits (Pack of 6)',   c:'kirana',    i:'🍪',col:'c6',p:30, u:'pack',   d:'Parle-G glucose biscuits. Pack of 6. Energy snack for all ages.'},
+  {id:40,n:'Amul Butter 100g',               c:'kirana',    i:'🧈',col:'c6',p:60, u:'pack',   d:'Amul pasteurized butter. 100g. For roti, toast & cooking.'},
+
+  // POOJA ITEMS
+  {id:41,n:'Agarbatti (Cycle Brand)',        c:'pooja',     i:'🪔',col:'c7',p:30, u:'pack',   d:'Cycle brand agarbatti. Long lasting fragrance. Pack of 40 sticks.', b:'Popular'},
+  {id:42,n:'Camphor (Kapoor) Tablets',       c:'pooja',     i:'🪔',col:'c7',p:25, u:'pack',   d:'Pure camphor tablets. For pooja & aarti. Fast burning. Pack of 20.'},
+  {id:43,n:'Kumkum & Haldi Pack',            c:'pooja',     i:'🔴',col:'c7',p:20, u:'pack',   d:'Pure kumkum and haldi. For daily pooja. Small convenient pack.'},
+  {id:44,n:'Diyas (Earthen Lamps) 12pcs',   c:'pooja',     i:'🪔',col:'c7',p:30, u:'pack',   d:'12 earthen diyas. Handmade. For Diwali, daily pooja & festivals.', b:'Festive'},
+  {id:45,n:'Pooja Thali Set',               c:'pooja',     i:'🫙',col:'c7',p:150,u:'set',    d:'Complete pooja thali. Includes plate, diya, incense holder. Brass finish.'},
+  {id:46,n:'Flowers & Maala (Seasonal)',     c:'pooja',     i:'🌺',col:'c7',p:20, u:'bunch',  d:'Fresh flower mala for daily pooja. Seasonal availability. Ask for price.'},
+
+  // GENERAL STORE
+  {id:47,n:'Colgate Toothpaste 200g',        c:'general',   i:'🪥',col:'c8',p:80, u:'tube',   d:'Colgate strong teeth toothpaste. 200g. Cavity protection formula.', b:'Popular'},
+  {id:48,n:'Clinic Plus Shampoo 175ml',      c:'general',   i:'🧴',col:'c8',p:85, u:'bottle', d:'Clinic Plus shampoo. 175ml. Strong & long hair. With milk proteins.'},
+  {id:49,n:'Dettol Soap (Pack of 3)',        c:'general',   i:'🧼',col:'c8',p:90, u:'pack',   d:'Dettol antiseptic soap. Pack of 3. Kills 99.9% germs. Original scent.'},
+  {id:50,n:'Hajmola Tablets',               c:'general',   i:'💊',col:'c8',p:20, u:'pack',   d:'Dabur Hajmola digestive tablets. Pack of 120. After meal digestive.'},
+  {id:51,n:'Fevicol MR 250g',               c:'general',   i:'🧴',col:'c8',p:65, u:'bottle', d:'Fevicol MR white adhesive. 250g. For wood, paper & craft projects.'},
+  {id:52,n:'Notebook Carry Bag',            c:'general',   i:'🎒',col:'c8',p:120,u:'piece',  d:'School carry bag. Zippered. 2 compartments. For books & notebooks.', b:'New'},
+];
+
+/* ═══ DEMO ORDERS ═══ */
+const today = new Date().toISOString().slice(0,10);
+const yest  = new Date(Date.now()-86400000).toISOString().slice(0,10);
+let ORDERS = [];
+try { ORDERS = JSON.parse(localStorage.getItem('tk_orders')||'[]'); } catch(e){}
+if(!ORDERS.length){
+  ORDERS = [
+    {id:'ORD001',date:today,   time:'09:00 AM',cust:'Ramesh Shinde',   mob:'9876543210',items:'Classmate 172 x3, Cello Pen Pack x1',       amount:210,pay:'Cash',    status:'Delivered'},
+    {id:'ORD002',date:today,   time:'10:30 AM',cust:'Sunita More',     mob:'9765432109',items:'Sundaram Winner 240 x2, Geometry Box x1',   amount:231,pay:'PhonePe', status:'Delivered'},
+    {id:'ORD003',date:today,   time:'11:45 AM',cust:'Ganesh Patil',    mob:'9654321098',items:'Classmate Bulk Pack x1, Apsara Pencil x2',   amount:350,pay:'GPay',    status:'Pending'},
+    {id:'ORD004',date:today,   time:'02:00 PM',cust:'Priya Deshmukh',  mob:'9543210987',items:'Classmate 240 x2, Sketch Pen Set x1',       amount:195,pay:'Cash',    status:'Pending'},
+    {id:'ORD005',date:yest,    time:'08:30 AM',cust:'Suresh Jadhav',   mob:'9432109876',items:'Aashirvaad Atta 5kg x1, Tata Salt x2',      amount:250,pay:'UPI',     status:'Delivered'},
+    {id:'ORD006',date:yest,    time:'04:00 PM',cust:'Kavita Kulkarni', mob:'9321098765',items:'Sundaram 172 x4, Classmate Drawing Book x2', amount:312,pay:'PhonePe', status:'Delivered'},
+  ];
+  try { localStorage.setItem('tk_orders', JSON.stringify(ORDERS)); } catch(e){}
+}
+
+/* ═══ CUSTOMERS ═══ */
+function loadCustomers(){
+  try { return JSON.parse(localStorage.getItem('tk_customers')||'[]'); } catch(e){ return []; }
+}
+function saveCustomers(){
+  try { localStorage.setItem('tk_customers',JSON.stringify(CUSTOMERS)); } catch(e){}
+}
+let CUSTOMERS = loadCustomers();
+if(!CUSTOMERS.length){
+  CUSTOMERS = [
+    {name:'Demo Customer',email:'demo@customer.com',pass:'demo123',mobile:'9999999999',city:'Manwath',district:'Parbhani',land:'Manwath High School',fav:'Classmate 172pg',date:yest},
+  ];
+  saveCustomers();
+}
+
+/* ═══ CART ═══ */
+let cart = {};
+function addToCart(id){
+  cart[id]=(cart[id]||0)+1;
+  updateCartBadge();
+  const item=MENU.find(m=>m.id===id);
+  toast('🛒','Added!',item.n+' added to cart.','green');
+}
+function removeFromCart(id){ if(cart[id]>1) cart[id]--; else delete cart[id]; updateCartBadge(); renderCartItems(); }
+function updateCartBadge(){
+  const total=Object.values(cart).reduce((a,b)=>a+b,0);
+  document.getElementById('cartBadge').textContent=total;
+  document.getElementById('cartFab').style.display=total>0?'flex':'none';
+}
+function clearCart(){ cart={}; updateCartBadge(); }
+function getCartTotal(){ return Object.entries(cart).reduce((sum,[id,qty])=>{ const item=MENU.find(m=>m.id==id); return sum+(item?item.p*qty:0); },0); }
+
+function renderCartItems(){
+  const cont=document.getElementById('cartItems');
+  const keys=Object.keys(cart);
+  if(!keys.length){ cont.innerHTML='<p style="text-align:center;color:#bbb;font-size:13px;padding:20px;">Cart is empty. Add products from the store!</p>'; document.getElementById('cartTotal').classList.add('hidden'); document.getElementById('paySection').classList.add('hidden'); document.getElementById('cartBtns').classList.remove('hidden'); return; }
+  cont.innerHTML=keys.map(id=>{ const item=MENU.find(m=>m.id==id); return `<div class="cart-item"><div><div style="font-weight:700;font-size:13px;">${item.i} ${item.n}</div><div style="font-size:11px;color:#aaa;">₹${item.p} per ${item.u}</div></div><div class="qty-ctrl"><button class="qty-btn" onclick="removeFromCart(${id})">−</button><span style="font-weight:700;font-size:14px;min-width:20px;text-align:center;">${cart[id]}</span><button class="qty-btn" onclick="addToCart(${id})">+</button><span style="font-weight:700;color:var(--bl);min-width:42px;text-align:right;">₹${item.p*cart[id]}</span></div></div>`; }).join('');
+  document.getElementById('cartTotal').classList.remove('hidden');
+  document.getElementById('totalAmt').textContent='₹'+getCartTotal();
+}
+
+function openCart(){ renderCartItems(); document.getElementById('cartModal').classList.add('show'); }
+function closeCart(){ document.getElementById('cartModal').classList.remove('show'); }
+function backToCart(){ document.getElementById('paySection').classList.add('hidden'); document.getElementById('cartBtns').classList.remove('hidden'); }
+
+function proceedToOrder(){
+  if(!Object.keys(cart).length){ toast('❌','Cart Empty','Please add items first.','err'); return; }
+  document.getElementById('paySection').classList.remove('hidden');
+  document.getElementById('cartBtns').classList.add('hidden');
+  document.getElementById('ordOk').classList.add('hidden');
+  document.getElementById('ordESB').classList.add('hidden');
+}
+
+let selectedPay='';
+function selectPay(method,el){
+  selectedPay=method;
+  document.querySelectorAll('.pay-opt').forEach(e=>e.classList.remove('selected'));
+  el.classList.add('selected');
+  document.getElementById('upiDetails').classList.toggle('hidden',method==='cash');
+}
+
+/* ═══ PLACE ORDER ═══ */
+async function placeOrder(){
+  const name=document.getElementById('ordName').value.trim();
+  const mob=document.getElementById('ordMob').value.trim();
+  const email=document.getElementById('ordEmail').value.trim();
+  const note=document.getElementById('ordNote').value.trim();
+  if(!name||!mob){ toast('❌','Error','Please enter name & mobile.','err'); return; }
+  if(!selectedPay){ toast('❌','Error','Please select a payment method.','err'); return; }
+
+  const btn=document.getElementById('ordBtn');
+  btn.disabled=true; btn.textContent='📤 Placing Order...';
+
+  const itemsList=Object.entries(cart).map(([id,qty])=>{ const item=MENU.find(m=>m.id==id); return `${item.n} x${qty} = ₹${item.p*qty}`; }).join('\n  ');
+  const total=getCartTotal();
+  const now=new Date().toLocaleString('en-IN',{dateStyle:'full',timeStyle:'short'});
+  const orderId='ORD'+Date.now().toString().slice(-5);
+  const payLabel=selectedPay==='phonepay'?'PhonePe':selectedPay==='gpay'?'Google Pay':selectedPay==='upi'?'UPI':'Cash on Pickup';
+
+  ORDERS.unshift({id:orderId,date:today,time:new Date().toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit'}),cust:name,mob,email:email||'',items:Object.entries(cart).map(([id,qty])=>{const item=MENU.find(m=>m.id==id);return `${item.n} x${qty}`;}).join(', '),amount:total,pay:payLabel,status:'Pending'});
+  try { localStorage.setItem('tk_orders',JSON.stringify(ORDERS)); } catch(e){}
+
+  const adminBody=
+`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  TIRUPATI KIRANA — New Order! 📚
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Namaskar,
+
+New order received on your website!
+
+━━ ORDER DETAILS ━━━━━━━━━━━━━━━━━━━━━
+  Order ID    : ${orderId}
+  Customer    : ${name}
+  Mobile      : ${mob}
+  Email       : ${email||'Not provided'}
+  Payment     : ${payLabel}
+  Order Time  : ${now}
+
+━━ ITEMS ORDERED ━━━━━━━━━━━━━━━━━━━━━
+  ${itemsList}
+
+  TOTAL       : ₹${total}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  Note: ${note||'No special note'}
+
+Please contact the customer to confirm!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Tirupati Kirana & General Store — Manwath
+${SHOP_EMAIL} | ${SHOP_PHONE}`;
+
+  const custBody=email?
+`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  TIRUPATI KIRANA — Order Confirmed! ✅
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Namaskar ${name} ji,
+
+✅ Your order has been received!
+We will contact you shortly.
+
+━━ YOUR ORDER ━━━━━━━━━━━━━━━━━━━━━━━━
+  Order ID  : ${orderId}
+  ${itemsList}
+  TOTAL     : ₹${total}
+  Payment   : ${payLabel}
+  Placed At : ${now}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📞 For queries: ${SHOP_PHONE}
+📍 ${SHOP_ADDR}
+
+With regards,
+Tirupati Kirana & General Store
+Manwath, Dist. Parbhani, Maharashtra
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`:null;
+
+  setESB('ordESB','sending','Notifying admin of your order...');
+
+  const promises=[sendEJS(EJS.TEMPLATE_ID,{to_email:SHOP_EMAIL,to_name:SHOP_NAME,from_name:name,cust_email:email||SHOP_EMAIL,cust_mobile:mob,cust_city:'Manwath',reg_time:now,subject:'📚 New Order — '+orderId+' — '+name+' | ₹'+total,message:adminBody})];
+  if(email&&custBody) promises.push(sendEJS(EJS.CUSTOMER_TEMPLATE_ID,{to_email:email,to_name:name,shop_name:SHOP_NAME,shop_email:SHOP_EMAIL,subject:'✅ Order Confirmed — '+orderId+' — Tirupati Kirana',message:custBody}));
+
+  const results=await Promise.all(promises);
+  btn.disabled=false; btn.textContent='📦 Place Order & Notify Admin';
+
+  if(results[0].ok||!CONFIGURED){
+    setESB('ordESB','sent','✅ Order placed! Admin notified. We\'ll contact you soon.');
+    document.getElementById('ordOk').classList.remove('hidden');
+    toast('🎉','Order Placed!','Admin notified. We\'ll call you to confirm!','green');
+    clearCart(); updateCartBadge();
+    const modEmails=[{label:'Admin Order Alert → '+SHOP_EMAIL,body:adminBody}];
+    if(email&&custBody) modEmails.push({label:'Customer Confirmation → '+email,body:custBody});
+    setTimeout(()=>showMod(modEmails),700);
+  } else {
+    setESB('ordESB','failed','Email failed — please call us at '+SHOP_PHONE);
+    toast('⚠️','Order Saved','Email failed. Please call: '+SHOP_PHONE,'gold');
+  }
+}
+
+/* ═══ RENDER PRODUCTS ═══ */
+function makeCard(item){
+  return `<div class="sc2">
+    <div class="sci ${item.col}">${item.i}${item.b?`<div class="scb-badge">${item.b}</div>`:''}</div>
+    <div class="scbd">
+      <div class="sccat">${item.c}</div>
+      <div class="scnm">${item.n}</div>
+      <div class="scdesc">${item.d}</div>
+      <div class="scft">
+        <div class="scpr">₹${item.p} <small>/${item.u}</small></div>
+        <button class="abtn" onclick="addToCart(${item.id})">+ Cart</button>
+      </div>
+    </div>
+  </div>`;
+}
+function flt(c,el){
+  document.querySelectorAll('.ftab').forEach(t=>t.classList.remove('active'));
+  el.classList.add('active');
+  const list=c==='all'?MENU:MENU.filter(m=>m.c===c);
+  document.getElementById('sgrid').innerHTML=list.map(makeCard).join('');
+}
+
+/* ═══ NAV ═══ */
+function showPage(p){
+  document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));
+  document.getElementById('page-'+p).classList.add('active');
+  window.scrollTo(0,0);
+  document.querySelectorAll('.nb').forEach(b=>b.classList.remove('active'));
+}
+
+/* ═══ TOAST ═══ */
+let _tt;
+function toast(ic,ttl,msg,tp){
+  const t=document.getElementById('toast');
+  document.getElementById('tIco').textContent=ic;
+  document.getElementById('tTtl').textContent=ttl;
+  document.getElementById('tMsg').textContent=msg;
+  t.className='toast'+(tp==='gold'?' gt':tp==='err'?' et':'');
+  t.style.display='flex'; clearTimeout(_tt);
+  _tt=setTimeout(()=>{ t.classList.add('hide'); setTimeout(()=>{ t.style.display='none'; t.classList.remove('hide'); },380); },5500);
+}
+
+/* ═══ EMAIL MODAL ═══ */
+function showMod(emails){
+  document.getElementById('modalCont').innerHTML=emails.map((e,i)=>`<div class="elbl">📧 Email ${i+1}: ${e.label}</div><div class="eprev">${e.body}</div>`).join('');
+  document.getElementById('eModal').classList.add('show');
+}
+function closeMod(){ document.getElementById('eModal').classList.remove('show'); }
+
+/* ═══ EMAIL STATUS ═══ */
+function setESB(id,state,msg){
+  const el=document.getElementById(id);if(!el)return;
+  el.className='esb '+state;
+  el.innerHTML=state==='sending'?`<div class="spin"></div><span>${msg}</span>`:`<span>${state==='sent'?'✅':'⚠️'} ${msg}</span>`;
+  el.classList.remove('hidden');
+}
+
+/* ═══ SEND EMAIL ═══ */
+async function sendEJS(tplId,params){
+  if(!CONFIGURED) return {ok:false};
+  try{ const r=await emailjs.send(EJS.SERVICE_ID,tplId,params); return {ok:true,r}; }
+  catch(e){ console.warn('EmailJS:',e); return {ok:false}; }
+}
+
+/* ═══ REGISTER ═══ */
+async function doRegister(){
+  const fn=document.getElementById('rFN').value.trim();
+  const ln=document.getElementById('rLN').value.trim();
+  const em=document.getElementById('rEM').value.trim();
+  const mo=document.getElementById('rMO').value.trim();
+  const ct=document.getElementById('rCT').value.trim();
+  const dt=document.getElementById('rDT').value.trim();
+  const la=document.getElementById('rLA').value.trim();
+  const fv=document.getElementById('rFV').value.trim();
+  const p1=document.getElementById('rP1').value;
+  const p2=document.getElementById('rP2').value;
+  if(!fn||!ln||!em||!mo||!ct||!p1){ toast('❌','Error','Please fill all required fields.','err'); return; }
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)){ toast('❌','Error','Enter a valid email.','err'); return; }
+  if(p1!==p2){ toast('❌','Error','Passwords do not match.','err'); return; }
+  if(p1.length<5){ toast('❌','Error','Password min 5 characters.','err'); return; }
+  if(CUSTOMERS.find(c=>c.email===em)){ toast('❌','Error','Email already registered.','err'); return; }
+
+  const btn=document.getElementById('regBtn');
+  btn.disabled=true; btn.textContent='📤 Sending...';
+  CUSTOMERS.push({name:fn+' '+ln,email:em,pass:p1,mobile:mo,city:ct,district:dt,land:la,fav:fv,date:new Date().toISOString().slice(0,10)});
+  saveCustomers();
+
+  const now=new Date().toLocaleString('en-IN',{dateStyle:'full',timeStyle:'short'});
+  const adminBody=
+`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  TIRUPATI KIRANA — New Registration! 📚
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Name        : ${fn} ${ln}
+  Email       : ${em}
+  Mobile      : ${mo}
+  City        : ${ct}
+  District    : ${dt}
+  School      : ${la||'Not provided'}
+  Fav Product : ${fv||'Not provided'}
+  Registered  : ${now}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Tirupati Kirana & General Store
+${SHOP_EMAIL} | ${SHOP_PHONE}`;
+
+  const custBody=
+`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  TIRUPATI KIRANA — Registration Confirmed ✅
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Namaskar ${fn} ji,
+
+✅ Your account has been created!
+
+  Name      : ${fn} ${ln}
+  Email     : ${em}
+  Mobile    : ${mo}
+  Registered: ${now}
+
+📞 ${SHOP_PHONE}
+📍 ${SHOP_ADDR}
+
+With regards,
+Tirupati Kirana & General Store — Manwath
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`;
+
+  setESB('regESB','sending','Sending registration emails...');
+  const [r1,r2]=await Promise.all([
+    sendEJS(EJS.TEMPLATE_ID,{to_email:SHOP_EMAIL,to_name:SHOP_NAME,from_name:fn+' '+ln,cust_email:em,cust_mobile:mo,cust_city:ct,reg_time:now,subject:'📚 New Registration — '+fn+' '+ln+' | '+mo,message:adminBody}),
+    sendEJS(EJS.CUSTOMER_TEMPLATE_ID,{to_email:em,to_name:fn+' '+ln,shop_name:SHOP_NAME,shop_email:SHOP_EMAIL,subject:'✅ Registration Confirmed — Tirupati Kirana',message:custBody})
+  ]);
+  btn.disabled=false; btn.textContent='📚 Create Account & Send Confirmation';
+  if(r1.ok||!CONFIGURED){
+    setESB('regESB','sent',r2?.ok?'✅ 2 emails sent — Admin notified + confirmation to '+em:'✅ Registered! Admin notified.');
+    document.getElementById('regOk').classList.remove('hidden');
+    toast('✅','Registered!','Welcome to Tirupati Kirana!','green');
+    renderAdminDash();
+    setTimeout(()=>showMod([{label:'Admin Alert → '+SHOP_EMAIL,body:adminBody},{label:'Customer Confirmation → '+em,body:custBody}]),700);
+  } else {
+    setESB('regESB','failed','Email failed — account saved. Call: '+SHOP_PHONE);
+    toast('⚠️','Account Saved','Email failed. Account created. Call us.','gold');
+    renderAdminDash();
+  }
+}
+
+/* ═══ LOGIN ═══ */
+async function doLogin(){
+  const em=document.getElementById('cEM').value.trim();
+  const pw=document.getElementById('cPW').value;
+  const found=CUSTOMERS.find(c=>c.email===em&&c.pass===pw);
+  if(!found){ document.getElementById('cErr').classList.remove('hidden'); return; }
+  document.getElementById('cErr').classList.add('hidden');
+  const btn=document.getElementById('loginBtn');
+  btn.disabled=true; btn.textContent='🔄 Logging in...';
+  const now=new Date().toLocaleString('en-IN',{dateStyle:'full',timeStyle:'short'});
+  const loginBody=
+`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  TIRUPATI KIRANA — Customer Login 🔔
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Customer  : ${found.name}
+  Email     : ${em}
+  Mobile    : ${found.mobile}
+  City      : ${found.city}
+  Login At  : ${now}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`;
+  setESB('loginESB','sending','Notifying admin of your login...');
+  const r=await sendEJS(EJS.TEMPLATE_ID,{to_email:SHOP_EMAIL,to_name:SHOP_NAME,from_name:found.name,cust_email:em,cust_mobile:found.mobile,cust_city:found.city,reg_time:now,subject:'🔔 Customer Login — '+found.name,message:loginBody});
+  btn.disabled=false; btn.textContent='Login to My Account';
+  setESB('loginESB',r.ok?'sent':'failed',r.ok?'Admin notified at '+SHOP_EMAIL:CONFIGURED?'EmailJS error':'Preview mode');
+  document.getElementById('cName').textContent=found.name.split(' ')[0];
+  document.getElementById('cEmail').textContent=found.email;
+  renderCustDash(found);
+  showPage('customer-dash');
+  toast('✅','Welcome Back!',found.name.split(' ')[0]+' ji, login successful!','green');
+  setTimeout(()=>showMod([{label:'Login Alert → '+SHOP_EMAIL,body:loginBody}]),700);
+}
+
+/* ═══ ADMIN LOGIN ═══ */
+function doAdminLogin(){
+  if(document.getElementById('aUN').value==='admin'&&document.getElementById('aPW').value==='admin123'){
+    document.getElementById('aErr').classList.add('hidden');
+    renderAdminDash(); showPage('admin-dash');
+    toast('🔐','Admin Access','Welcome, Admin!','gold');
+  } else { document.getElementById('aErr').classList.remove('hidden'); }
+}
+
+/* ═══ CUSTOMER DASHBOARD ═══ */
+function renderCustDash(user){
+  const myOrders=ORDERS.filter(o=>o.mob===user.mobile||o.email===user.email);
+  document.getElementById('cTotalOrders').textContent=myOrders.length;
+  document.getElementById('cTotalSpent').textContent='₹'+myOrders.reduce((s,o)=>s+o.amount,0);
+  document.getElementById('cPending').textContent=myOrders.filter(o=>o.status==='Pending').length;
+  document.getElementById('cDelivered').textContent=myOrders.filter(o=>o.status==='Delivered').length;
+  document.getElementById('cPurchTbl').innerHTML=myOrders.length?myOrders.map((o,i)=>`<tr><td>${i+1}</td><td>${o.date}</td><td>${o.items}</td><td>₹${o.amount}</td><td>${o.pay}</td><td><span class="bdg ${o.status==='Delivered'?'bgrn':o.status==='Pending'?'by':'bb2'}">${o.status}</span></td></tr>`).join(''):'<tr><td colspan="6" style="text-align:center;color:#bbb;padding:20px;">No orders yet. Start shopping!</td></tr>';
+}
+
+/* ═══ ADMIN DASHBOARD ═══ */
+function renderAdminDash(){
+  document.getElementById('todayDate').textContent=today;
+  const todayOrders=ORDERS.filter(o=>o.date===today);
+  const totalRev=ORDERS.reduce((s,o)=>s+o.amount,0);
+  document.getElementById('aTotalOrders').textContent=ORDERS.length;
+  document.getElementById('aRevenue').textContent='₹'+totalRev.toLocaleString();
+  document.getElementById('aCustCount').textContent=CUSTOMERS.length;
+  document.getElementById('aPendingCount').textContent=ORDERS.filter(o=>o.status==='Pending').length;
+  document.getElementById('aDelivered').textContent=todayOrders.filter(o=>o.status==='Delivered').length;
+
+  document.getElementById('aTodayTbl').innerHTML=todayOrders.length?todayOrders.map((o,i)=>`<tr><td>${i+1}</td><td>${o.time}</td><td>${o.cust}</td><td style="max-width:200px;font-size:11px;">${o.items}</td><td>₹${o.amount}</td><td>${o.pay}</td><td><span class="bdg ${o.status==='Delivered'?'bgrn':'by'}">${o.status}</span></td><td><button onclick="changeStatus('${o.id}')" style="background:var(--bl);color:#fff;border:none;padding:4px 10px;border-radius:6px;font-size:11px;cursor:pointer;">Update</button></td></tr>`).join(''):'<tr><td colspan="8" style="text-align:center;color:#bbb;padding:20px;">No orders today yet.</td></tr>';
+
+  document.getElementById('aSalesTbl').innerHTML=ORDERS.map((o,i)=>`<tr><td>${i+1}</td><td>${o.date}</td><td>${o.cust}</td><td>${o.mob}</td><td style="max-width:180px;font-size:11px;">${o.items}</td><td>₹${o.amount}</td><td>${o.pay}</td><td><span class="bdg ${o.status==='Delivered'?'bgrn':'by'}">${o.status}</span></td></tr>`).join('');
+
+  const freq={};
+  ORDERS.forEach(o=>o.items.split(', ').forEach(i=>{ const n=i.split(' x')[0]; freq[n]=(freq[n]||0)+1; }));
+  document.getElementById('aTopItems').innerHTML=Object.entries(freq).sort((a,b)=>b[1]-a[1]).slice(0,5).map(([n,q],i)=>`<div style="display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid #f2f2f2;"><div style="display:flex;align-items:center;gap:8px;"><div style="width:20px;height:20px;background:#e8f0fb;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:800;color:var(--bl);">${i+1}</div><div style="font-weight:700;font-size:13px;">📚 ${n}</div></div><span class="bdg bg">${q} orders</span></div>`).join('');
+
+  const sorted=CUSTOMERS.slice().reverse();
+  document.getElementById('aCusts').innerHTML=sorted.slice(0,5).map((c,i)=>`<div style="display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid #f2f2f2;"><div><div style="font-weight:700;font-size:13px;">👤 ${c.name}${i===0?'<span style="margin-left:6px;background:#e8f0fb;color:var(--bl);font-size:9px;font-weight:800;padding:2px 7px;border-radius:8px;">NEW</span>':''}</div><div style="font-size:11px;color:#bbb;">${c.city||'—'} · ${c.mobile} · ${c.date}</div></div><span class="bdg bb2">Active</span></div>`).join('');
+
+  document.getElementById('aAllCusts').innerHTML=sorted.map((c,i)=>`<tr><td>${i+1}</td><td><strong>${c.name}</strong>${i===0?'<span style="margin-left:5px;background:#e8f0fb;color:var(--bl);font-size:9px;font-weight:800;padding:2px 6px;border-radius:6px;">NEW</span>':''}</td><td style="font-size:12px;">${c.email}</td><td>${c.mobile||'—'}</td><td>${c.city||'—'}</td><td>${c.district||'—'}</td><td>${c.land||'—'}</td><td>${c.fav||'—'}</td><td>${c.date}</td></tr>`).join('');
+}
+
+function changeStatus(ordId){
+  const ord=ORDERS.find(o=>o.id===ordId);
+  if(!ord) return;
+  ord.status=ord.status==='Pending'?'Delivered':'Pending';
+  try { localStorage.setItem('tk_orders',JSON.stringify(ORDERS)); } catch(e){}
+  renderAdminDash();
+  toast('✅','Status Updated',ordId+' → '+ord.status,'green');
+}
+
+function resetCustomers(){
+  if(!confirm('Reset to demo customers only? All new registrations will be removed.')) return;
+  try { localStorage.removeItem('tk_customers'); } catch(e){}
+  CUSTOMERS=loadCustomers();
+  if(!CUSTOMERS.length){
+    CUSTOMERS=[{name:'Demo Customer',email:'demo@customer.com',pass:'demo123',mobile:'9999999999',city:'Manwath',district:'Parbhani',land:'Manwath High School',fav:'Classmate 172pg',date:yest}];
+    saveCustomers();
+  }
+  renderAdminDash();
+  toast('🔄','Reset Done','Customer list reset to demo data.','gold');
+}
+
+/* ═══ LOGOUT ═══ */
+function logout(r){ showPage(r==='a'?'admin-login':'customer-login'); toast('👋','Logged Out','You have been logged out safely.','green'); }
+
+/* ═══ CONTACT ═══ */
+async function doContact(){
+  const n=document.getElementById('cNm').value.trim();
+  const m=document.getElementById('cMb').value.trim();
+  const em=document.getElementById('cEm').value.trim();
+  const sd=document.getElementById('cSd').value;
+  const ms=document.getElementById('cMs').value.trim();
+  if(!n||!m){ toast('❌','Error','Please enter name & mobile.','err'); return; }
+  const btn=document.querySelector('#page-contact .fsub');
+  btn.disabled=true; btn.textContent='📤 Sending...';
+  const now=new Date().toLocaleString('en-IN',{dateStyle:'full',timeStyle:'short'});
+  const contactBody=
+`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  TIRUPATI KIRANA — New Enquiry! 📩
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Name     : ${n}
+  Mobile   : ${m}
+  Email    : ${em||'Not provided'}
+  Product  : ${sd||'Not selected'}
+  Message  : ${ms||'No message'}
+  Sent At  : ${now}
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Tirupati Kirana & General Store — Manwath`;
+
+  const custConfirmBody=em?
+`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  TIRUPATI KIRANA — Message Received ✅
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Namaskar ${n} ji,
+✅ Your message received! We'll call you soon.
+  Product  : ${sd||'—'}
+  Message  : ${ms||'—'}
+  Received : ${now}
+📞 ${SHOP_PHONE} | 📍 ${SHOP_ADDR}
+Tirupati Kirana & General Store — Manwath
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`:null;
+
+  setESB('contactESB','sending','Sending message to admin...');
+  const promises=[sendEJS(EJS.TEMPLATE_ID,{to_email:SHOP_EMAIL,to_name:SHOP_NAME,from_name:n,cust_email:em||SHOP_EMAIL,cust_mobile:m,cust_city:'—',reg_time:now,subject:'📩 Enquiry — '+n+' | '+m,message:contactBody})];
+  if(em&&custConfirmBody) promises.push(sendEJS(EJS.CUSTOMER_TEMPLATE_ID,{to_email:em,to_name:n,shop_name:SHOP_NAME,shop_email:SHOP_EMAIL,subject:'✅ Message Received — Tirupati Kirana',message:custConfirmBody}));
+  const results=await Promise.all(promises);
+  btn.disabled=false; btn.textContent='📤 Send Message';
+  if(results[0].ok||!CONFIGURED){
+    setESB('contactESB','sent',em&&results[1]?.ok?'✅ 2 emails sent — Admin notified + confirmation to '+em:'✅ Message sent to admin!');
+    document.getElementById('cOk').classList.remove('hidden');
+    toast('✅','Message Sent!','We will contact you soon.','green');
+    document.getElementById('cNm').value=''; document.getElementById('cMb').value=''; document.getElementById('cEm').value=''; document.getElementById('cSd').selectedIndex=0; document.getElementById('cMs').value='';
+    const modEmails=[{label:'Admin Alert → '+SHOP_EMAIL,body:contactBody}];
+    if(em&&custConfirmBody) modEmails.push({label:'Customer Confirmation → '+em,body:custConfirmBody});
+    setTimeout(()=>showMod(modEmails),700);
+  } else {
+    setESB('contactESB','failed','Send failed — call us: '+SHOP_PHONE);
+    toast('❌','Send Failed','Please call us directly.','err');
+  }
+}
+
+/* ═══ INIT ═══ */
+flt('all', document.querySelector('.ftab'));
+</script>
+</body>
+</html>
